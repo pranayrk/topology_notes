@@ -1,0 +1,5 @@
+map:
+  - src/preamble.tex
+  - src/definitions_and_theory
+  - src/exercises
+  - src/closing.tex

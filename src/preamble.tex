@@ -1,0 +1,45 @@
+\documentclass[12pt,twoside]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amsfonts,graphicx,amsthm}
+\usepackage{epsfig,amssymb}
+\usepackage{caption}
+\usepackage{fancyhdr}
+\usepackage{lipsum}
+\usepackage{thmtools}
+\usepackage{enumitem}
+\usepackage[top=1.25in, bottom=1.25in,left=1.5in, right=1.25in]{geometry}
+
+\newtheorem{defn}{Definition}
+\newtheorem{note}{Note}
+\newtheorem{notation}[subsection]{Notation}
+\newtheorem{thm}{Theorem}
+\newtheorem{corollary}[subsection]{Corollary}
+\newtheorem{eg}[subsection]{Example}
+\newtheorem{lemma}[subsection]{Lemma}
+\newtheorem{result}[subsection]{Result}
+\declaretheoremstyle[bodyfont=\normalfont]{normalbody}
+\declaretheorem[style=normalbody,name=]{ex}
+\newtheorem{remark}[subsection]{Remark}
+\newtheorem{prop}[subsection]{Proposition}
+\newenvironment*{ans}{\textbf{ans.}\space\em\\}{\par}
+\newenvironment*{source}{\hfill\scriptsize\textbf{Source.}\space}{\par}
+
+\declaretheoremstyle[headfont=\normalfont]{normalhead}
+
+\makeatletter
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+
+\widowpenalties 1 10000
+\raggedbottom
+\setlength{\parindent}{0pt}
+\renewcommand{\chaptername}{}
+
+\setlength{\oddsidemargin}{36pt}
+\setlength{\evensidemargin}{36pt}
+
+\begin{document}
+
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
