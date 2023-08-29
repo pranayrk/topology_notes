@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2023.4.27)  29 AUG 2023 15:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2023.4.27)  30 AUG 2023 02:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -269,37 +269,38 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \c@defn=\count284
 \c@note=\count285
 \c@thm=\count286
-\c@ex=\count287
+\c@result=\count287
+\c@ex=\count288
  (./topology_notes.aux)
 \openout1 = `topology_notes.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count288
+\scratchcounter=\count289
 \scratchdimen=\dimen171
 \scratchbox=\box55
-\nofMPsegments=\count289
-\nofMParguments=\count290
+\nofMPsegments=\count290
+\nofMParguments=\count291
 \everyMPshowfont=\toks35
-\MPscratchCnt=\count291
+\MPscratchCnt=\count292
 \MPscratchDim=\dimen172
-\MPnumerator=\count292
-\makeMPintoPDFobject=\count293
+\MPnumerator=\count293
+\makeMPintoPDFobject=\count294
 \everyMPtoPDFconversion=\toks36
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -367,35 +368,58 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  1.
 [1
 
-] [2] [3]
- 2.
-[4
+] [2]
+Overfull \hbox (84.6637pt too wide) in paragraph at lines 202--203
+\OT1/cmr/bx/n/12 Definition 17. \OT1/cmr/m/it/12 Let $\OML/cmm/m/it/12 K \OT1/c
+mr/m/n/12 = []$\OT1/cmr/m/it/12 . Con-sider the ba-sis $\OML/cmm/m/it/12 ^^L \O
+T1/cmr/m/n/12 = [] \OMS/cmsy/m/n/12 [
+ []
 
-] [5] [6] (./topology_notes.aux) ) 
+[3]
+Overfull \hbox (10.80399pt too wide) in paragraph at lines 219--221
+\OML/cmm/m/it/12 ^^\ \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 U \OM
+S/cmsy/m/n/12 ^^R \OML/cmm/m/it/12 X \OT1/cmr/m/n/12 :$ \OT1/cmr/m/it/12 for ev
+-ery $\OML/cmm/m/it/12 x \OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12 U$ \OT1/cmr/m/it/1
+2 there ex-ists a fi-nite num-ber of mem-bers $\OML/cmm/m/it/12 S[]; S[]; :::; 
+S[] \OMS/cmsy/m/n/12 2
+ []
+
+[4] [5]
+ 2.
+[6
+
+] [7] [8]
+Overfull \hbox (12.92456pt too wide) in paragraph at lines 616--617
+\OT1/cmr/bx/n/12 32. \OT1/cmr/m/n/12 Let $\OML/cmm/m/it/12 K \OT1/cmr/m/n/12 = 
+[]$. Con-sider the col-lec-tion $\OML/cmm/m/it/12 ^^L \OT1/cmr/m/n/12 = [] \OMS
+/cmsy/m/n/12 [
+ []
+
+[9] (./topology_notes.aux) ) 
 Here is how much of TeX's memory you used:
  6423 strings out of 476024
- 110388 string characters out of 5796533
- 1861388 words of memory out of 5000000
+ 110424 string characters out of 5796533
+ 1863388 words of memory out of 5000000
  26786 multiletter control sequences out of 15000+600000
  520504 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,6n,77p,392b,275s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-sup
-er/cm-super-ts1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
-2.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/sha
-re/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/
-msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on topology_notes.pdf (7 pages, 164781 bytes).
+ 72i,6n,77p,399b,275s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-
+super-ts1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/font
+s/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
+share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10
+.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on topology_notes.pdf (10 pages, 180020 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
- 58 compressed objects within 1 object stream
+ 103 PDF objects out of 1000 (max. 8388607)
+ 64 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
