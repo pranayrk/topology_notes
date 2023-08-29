@@ -1,3 +1,4 @@
 map:
   - definitions_and_theory.tex
   - topological_spaces.tex
+  - bases_and_subbases.tex

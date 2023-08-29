@@ -1,0 +1,47 @@
+\section{Bases and Subbases}
+
+\begin{defn}
+    Let $X$ be a topological space. A collection $beta$ of open subsets of $X$ is said to be a \textbf{basis} for the topology on $X$ if for every open set $U$ in $X$ and $x in U$, there exists a $B in beta$ such that $x in B subset U$.
+
+    Members of $beta$ are called \textbf{basis open sets} corresponding to basis $beta$.
+\end{defn}
+
+\begin{note}
+    For any topological space $(X, tau)$, $tau$ is a basis for $tau$.
+\end{note}
+
+\begin{note}
+    In $reals$ the set ${{ (x - epsilon, x + epsilon) such that x in reals and epsilon strictly greater than 0 }}$ is a basis for the usual topology.
+\end{note}
+
+\begin{note}
+    For $(reals, tau)$, where $tau$ is the discrete topology, $beta = {{ {{ x }} such that x in reals }}$ is a basis for $tau$ on $reals$.
+\end{note}
+
+\begin{note}
+    In $reals$ the set ${{ (x - frac{1}{n}, x + frac{1}{n}) such that x in reals and n in naturals }}$ is a basis for the usual topology.
+\end{note}
+
+\begin{note}
+    In $reals$ the set ${{ (a, b) such that a,b in rationals and a strictly less than b }}$ is a basis for the usual topology. This is a countable basis for $reals$ with the usual topology.
+\end{note}
+
+\begin{note}
+    Let $(X, tau)$ be a metrizable space. Then $beta = {{ B(x, epsilon) such that x in X, epsilon strictly greater than 0 }}$ is a basis for $tau$.
+\end{note}
+
+\begin{defn}
+    Let $(X, tau)$ be a topological space. A collection $S subset of tau$ is said to be a \textbf{subbasis} for the topology $tau$ if for every open set $U$ in $tau$ and $x in U$, there exists a finite subcollection ${{ s1, s2, ..., sn }}$ in $S$ such that $x in intersection from {i = 1} going to n Si subset U$
+
+    Members of $S$ are called \textbf{subbasis open sets} corresponding to $S$.
+\end{defn}
+
+\begin{note}
+    For a topological space $(X, tau)$ a collection $S$ is a subbasis for the topology $tau$ if and only if the collection of all finite intersections of members in $S$ forms a basis for the topology $tau$.
+\end{note}
+
+\begin{thm}
+    Let $(X, tau)$ be a topological space and $beta$ be a collection of open sets in $(X, tau)$.
+
+    Then $beta$ is a basis for the topology $tau$ on $X$ if and only if every open set $U$ in $(X, tau)$ can be written as a union of members in $beta$.
+\end{thm}
