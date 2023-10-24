@@ -1,4 +1,7 @@
 map:
   - definitions_and_theory.tex
-  - topological_spaces.tex
-  - bases_and_subbases.tex
+    #  - topological_spaces.tex
+    #- bases_and_subbases.tex
+    # - sequences_and_nets.tex
+    # - interior_and_closure.tex
+  - product_topology.tex
