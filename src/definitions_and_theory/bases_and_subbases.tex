@@ -1,77 +1,77 @@
 \begin{defn}
-    Let $X$ be a topological space. A collection $beta$ of open subsets of $X$ is said to be a \textbf{basis} for the topology on $X$ if for every open set $U$ in $X$ and $x in U$, there exists a $B in beta$ such that $x in B subset U$.
+    Let $X$ be a topological space. A collection $\beta$ of open subsets of $X$ is said to be a \textbf{basis} for the topology on $X$ if for every open set $U$ in $X$ and $x \in U$, there exists a $B \in \beta$ such that $x \in B \subseteq U$.
 
-    Members of $beta$ are called \textbf{basis open sets} corresponding to basis $beta$.
+    Members of $\beta$ are called \textbf{basis open sets} corresponding to basis $\beta$.
 \end{defn}
 
 \begin{note}
-    For any topological space $(X, tau)$, $tau$ is a basis for $tau$.
+    For any topological space $\left (X, \tau\right )$, $\tau$ is a basis for $\tau$.
 \end{note}
 
 \begin{note}
-    In $reals$ the set ${{ (x - epsilon, x + epsilon) such that x in reals and epsilon strictly greater than 0 }}$ is a basis for the usual topology.
+    In $\mathbb{R}$ the set $\left\{ \left (x - \varepsilon, x + \varepsilon\right )  :  x \in \mathbb{R}\text{ and }\varepsilon >0 \right\}$ is a basis for the usual topology.
 \end{note}
 
 \begin{note}
-    For $(reals, tau)$, where $tau$ is the discrete topology, $beta = {{ {{ x }} such that x in reals }}$ is a basis for $tau$ on $reals$.
+    For $\left (\mathbb{R}, \tau\right )$, where $\tau$ is the discrete topology, $\beta = \left\{ \left\{ x \right\}  :  x \in \mathbb{R} \right\}$ is a basis for $\tau$ on $\mathbb{R}$.
 \end{note}
 
 \begin{note}
-    In $reals$ the set ${{ (x - frac{1}{n}, x + frac{1}{n}) such that x in reals and n in naturals }}$ is a basis for the usual topology.
+    In $\mathbb{R}$ the set $\left\{ \left (x - \frac{1}{n}, x + \frac{1}{n}\right )  :  x \in \mathbb{R}\text{ and }n \in \mathbb{N} \right\}$ is a basis for the usual topology.
 \end{note}
 
 \begin{note}
-    In $reals$ the set ${{ (a, b) such that a,b in rationals and a strictly less than b }}$ is a basis for the usual topology. This is a countable basis for $reals$ with the usual topology.
+    In $\mathbb{R}$ the set $\left\{ \left (a, b\right )  :  a,b \in \mathbb{Q}\text{ and }a < b \right\}$ is a basis for the usual topology. This is a countable basis for $\mathbb{R}$ with the usual topology.
 \end{note}
 
 \begin{note}
-    Let $(X, tau)$ be a metrizable space. Then $beta = {{ B(x, epsilon) such that x in X, epsilon strictly greater than 0 }}$ is a basis for $tau$.
+    Let $\left (X, \tau\right )$ be a metrizable space. Then $\beta = \left\{ B\left (x, \varepsilon\right )  :  x \in X, \varepsilon >0 \right\}$ is a basis for $\tau$.
 \end{note}
 
 \begin{defn}
-    Let $(X, tau)$ be a topological space. A collection $S subset of tau$ is said to be a \textbf{subbasis} for the topology $tau$ if for every open set $U$ in $tau$ and $x in U$, there exists a finite subcollection ${{ S1, S2, ..., Sn }}$ in $S$ such that $x in intersection from {i = 1} going to n Si subset U$
+    Let $\left (X, \tau\right )$ be a topological space. A collection $S \subseteq \tau$ is said to be a \textbf{subbasis} for the topology $\tau$ if for every open set $U$ in $\tau$ and $x \in U$, there exists a finite subcollection $\left\{ S_1, S_2, ..., S_n \right\}$ in $S$ such that $x \in \displaystyle\bigcap_{i = 1}^n S_i \subseteq U$
 
     Members of $S$ are called \textbf{subbasis open sets} corresponding to $S$.
 \end{defn}
 
 \begin{note}
-    For a topological space $(X, tau)$ a collection $S$ is a subbasis for the topology $tau$ if and only if the collection of all finite intersections of members in $S$ forms a basis for the topology $tau$.
+    For a topological space $\left (X, \tau\right )$ a collection $S$ is a subbasis for the topology $\tau$ if and only if the collection of all finite intersections of members in $S$ forms a basis for the topology $\tau$.
 \end{note}
 
 \begin{thm}
-    Let $(X, tau)$ be a topological space and $beta$ be a collection of open sets in $(X, tau)$.
+    Let $\left (X, \tau\right )$ be a topological space and $\beta$ be a collection of open sets in $\left (X, \tau\right )$.
 
-    Then $beta$ is a basis for the topology $tau$ on $X$ if and only if every open set $U$ in $(X, tau)$ can be written as a union of members in $beta$.
+    Then $\beta$ is a basis for the topology $\tau$ on $X$ if and only if every open set $U$ in $\left (X, \tau\right )$ can be written as a union of members in $\beta$.
 \end{thm}
 
 \begin{thm}
-    If $X$ is a set, a basis for a topology on $X$ is a collection $beta$ of subsets of $X$ such that 
+    If $X$ is a set, a basis for a topology on $X$ is a collection $\beta$ of subsets of $X$ such that 
     \begin{itemize}
-        \item for every $x in X$ there exists $B proper subset of beta$ containing $x$.
-        \item if $x in B1 intersection B2$, for some $B1, B2 in beta$, then there exists $B3 in beta$ such that $x in B3 subset B1 intersection B2$.
+        \item for every $x \in X$ there exists $B \subset \beta$ containing $x$.
+        \item if $x \in B_1 \cap B_2$, for some $B_1, B_2 \in \beta$, then there exists $B_3 \in \beta$ such that $x \in B_3 \subseteq B_1 \cap B_2$.
     \end{itemize}
 \end{thm}
 
 \begin{defn}
-    The topology generated by the basis $beta = {{ [a, b) such that a, b in reals, a strictly less than b }}$ is known as the \textbf{lower limit topology} on $reals$. 
+    The topology generated by the basis $\beta = \left\{ \left [a, b\right )  :  a, b \in \mathbb{R}, a < b \right\}$ is known as the \textbf{lower limit topology} on $\mathbb{R}$. 
 
-    The space $reals$ equipped with the lower limit topology is known as the \textbf{Sorgenfrey line} $reals sub l$.
+    The space $\mathbb{R}$ equipped with the lower limit topology is known as the \textbf{Sorgenfrey line} $\mathbb{R}_l$.
 \end{defn}
 
 \begin{prop}
-    The lower limit topology on $reals$ is strictly finer than the usual topology on $reals$
+    The lower limit topology on $\mathbb{R}$ is strictly finer than the usual topology on $\mathbb{R}$
 \end{prop}
 
 \begin{defn}
-    Let $K = {{ frac{1}{n} such that n in naturals }}$. Consider the basis \\ $beta = {{ (a, b) minus K such that a,b in rationals, a strictly less than b }} union {{ (a,b) such that a,b in reals, a strictly less than b }}$.  The topology generated by the basis $beta$ is known as the \textbf{$k$-topology} on $reals$.
+    Let $K = \left\{ \frac{1}{n}  :  n \in \mathbb{N} \right\}$. Consider the basis \\ $\beta = \left\{ \left (a, b\right ) \setminus K  :  a,b \in \mathbb{Q}, a < b \right\} \cup \left\{ \left (a,b\right )  :  a,b \in \mathbb{R}, a < b \right\}$.  The topology generated by the basis $\beta$ is known as the \textbf{$k$-topology} on $\mathbb{R}$.
 \end{defn}
 
 \begin{prop}
-    The $k$-topology on $reals$ is strictly finer than the usual topology on $reals$.
+    The $k$-topology on $\mathbb{R}$ is strictly finer than the usual topology on $\mathbb{R}$.
 \end{prop}
 
 \begin{prop}
-    The lower limit topology and the $k$-topology on $reals$ are incomparable.
+    The lower limit topology and the $k$-topology on $\mathbb{R}$ are incomparable.
 \end{prop}
 
 
@@ -81,15 +81,15 @@
 
 \begin{thm}
     Let $S$ be a subbasis for a topology on $X$. Then
-    \\ $tau = @@\{@@ U subset X such that $ for every $ x in U $ there exists a finite number of members $ S1, S2, ..., Sn in S $ such that $ x in S1 intersection S2 intersection ... intersection Sn subset U @@\}@@$ is the topology generated by the subbasis $S$.
+    \\ $\tau = \{ U \subseteq X  :  $ for every $ x \in U $ there exists a finite number of members $ S_1, S_2, ..., S_n \in S $ such that $ x \in S_1 \cap S_2 \cap ... \cap S_n \subseteq U \}$ is the topology generated by the subbasis $S$.
 \end{thm}
 
 \begin{thm}
-    Let $beta$ be a basis for a topology on $X$. Then the topology generated by $beta$ is equal to the intersection of all topologies on $X$ that contains $beta$.
+    Let $\beta$ be a basis for a topology on $X$. Then the topology generated by $\beta$ is equal to the intersection of all topologies on $X$ that contains $\beta$.
 \end{thm}
 
 \begin{thm}
-    If $beta$ is a basis for a topology on a set $X$, then the topology generated by $beta$ on $tau$ is the smallest topology on $X$ that contains $beta$.
+    If $\beta$ is a basis for a topology on a set $X$, then the topology generated by $\beta$ on $\tau$ is the smallest topology on $X$ that contains $\beta$.
 \end{thm}
 
 \hhrule

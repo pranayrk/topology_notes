@@ -1,13 +1,13 @@
 \begin{defn}
-    Let $X$ be a set. A function $f from naturals to X$ is called a \textbf{sequence} in $X$.
+    Let $X$ be a set. A function $f \colon \mathbb{N} \to X$ is called a \textbf{sequence} in $X$.
 \end{defn}
 
 \begin{defn}
-    Let $(X, Y)$ be a topological space. A sequence $(X sub n)$ is said to \textbf{converge} to $x in X$ if for every neighbourhood $U$ of $x$, there exists $n0 in naturals$ such that $xn in U for all n greater than n0$
+    Let $\left (X, Y\right )$ be a topological space. A sequence $\left (X_n\right )$ is said to \textbf{converge} to $x \in X$ if for every neighbourhood $U$ of $x$, there exists $n_0 \in \mathbb{N}$ such that $x_n \in U \;\forall n \geq n_0$
 \end{defn}
 
 \begin{defn}
-    A sequence $(xn)$ is said to be \textbf{eventually constant} if there exists $n0 in naturals$ such that $xn = x sub {n0} for all n greater than n0$.
+    A sequence $\left (x_n\right )$ is said to be \textbf{eventually constant} if there exists $n_0 \in \mathbb{N}$ such that $x_n = x_{n_0} \;\forall n \geq n_0$.
 \end{defn}
 
 \begin{thm}
@@ -15,24 +15,24 @@
 \end{thm}
 
 \begin{defn}
-    Let $f from naturals to X$ be a sequence in $X$. Then for any strictly increasing function $g from naturals to naturals$, the composition $f composed g from naturals to X$ is called a \textbf{subsequence} of $f$.
+    Let $f \colon \mathbb{N} \to X$ be a sequence in $X$. Then for any strictly increasing function $g \colon \mathbb{N} \to \mathbb{N}$, the composition $f \circ g \colon \mathbb{N} \to X$ is called a \textbf{subsequence} of $f$.
 \end{defn}
 
 \begin{thm}
-    In a topological space $(X, tau)$, every subsequence of a convergent sequence is convergent.
+    In a topological space $\left (X, \tau\right )$, every subsequence of a convergent sequence is convergent.
 \end{thm}
 
 \begin{defn}
-    Let $script A$ be a non-empty set. A relation $less than$ on a set $A$ is called a \textbf{partial order relation} if the following condition holds for all $alpha, beta, gamma$ in $A$:
+    Let $\mathcal{A}$ be a non-empty set. A relation $\leq$ on a set $A$ is called a \textbf{partial order relation} if the following condition holds for all $\alpha, \beta, \gamma$ in $A$:
     \begin{enumerate}
-        \item reflexive: $alpha less than alpha$
-        \item anti-symmetric: $alpha less than beta$ and $beta less than alpha$ $implies$ $alpha = beta$
-        \item transitive: $alpha less than beta$ and $beta less than gamma$ $implies$ $alpha less than gamma$
+        \item reflexive: $\alpha \leq \alpha$
+        \item anti-symmetric: $\alpha \leq \beta$ and $\beta \leq \alpha$ $\implies$ $\alpha = \beta$
+        \item transitive: $\alpha \leq \beta$ and $\beta \leq \gamma$ $\implies$ $\alpha \leq \gamma$
     \end{enumerate}
 \end{defn}
 
 \begin{defn}
-    A \textbf{directed set} $J$ is a set with a partial order relation $less than$ such that for each pair $alpha$ and $beta$ of $J$, there exists a $Y in J$ such that $alpha less than Y$ and $beta less than Y$.
+    A \textbf{directed set} $J$ is a set with a partial order relation $\leq$ such that for each pair $\alpha$ and $\beta$ of $J$, there exists a $Y \in J$ such that $\alpha \leq Y$ and $\beta \leq Y$.
 \end{defn}
 
 \begin{defn}
@@ -44,11 +44,11 @@ Every sequence is a net.
 \end{note}
 
 \begin{defn}
-    Let $J$ be a directed set with a partial order relation '$less than$'. A subset $K$ of $J$ is said to be \textbf{cofinal} in $J$ if for each $alpha in J$, there exists $beta in K$ such that $alpha less than beta$.
+    Let $J$ be a directed set with a partial order relation '$\leq$'. A subset $K$ of $J$ is said to be \textbf{cofinal} in $J$ if for each $\alpha \in J$, there exists $\beta \in K$ such that $\alpha \leq \beta$.
 \end{defn}
 
 \begin{prop}
-    If $g from naturals to naturals$ is a strictly increasing function then $g(naturals)$ is cofinal in $naturals$.
+    If $g \colon \mathbb{N} \to \mathbb{N}$ is a strictly increasing function then $g\left (\mathbb{N}\right )$ is cofinal in $\mathbb{N}$.
 \end{prop}
 
 \begin{thm}
@@ -56,16 +56,16 @@ Every sequence is a net.
 \end{thm}
 
 \begin{defn}
-    Let $f from J to X$ be a net in $X$. If $I$ is a directed set and $g from I to J$ such that
+    Let $f \colon J \to X$ be a net in $X$. If $I$ is a directed set and $g \colon I \to J$ such that
     \begin{itemize}
-        \item $i strictly less than j implies g(i) strictly less than g(j) for all i, j in I$
-        \item $g(I)$ is cofinal in $J$
+        \item $i < j \implies g\left (i\right ) < g\left (j\right ) \;\forall i, j \in I$
+        \item $g\left (I\right )$ is cofinal in $J$
     \end{itemize}
-    Then $f composed g from I to X$ is called a \textbf{subnet} of $f$.
+    Then $f \circ g \colon I \to X$ is called a \textbf{subnet} of $f$.
 \end{defn}
 
 \begin{defn}
-    The net $(X sub alpha) sub {alpha in J}$ is said to \textbf{converge} to a point $x in X$ if for every neighbourhood $U$ of $x$, there exists $alpha sub 0 in J$ such that $x sub alpha in U$ for all $alpha greater than alpha sub 0$.
+    The net $\left (X_\alpha\right )_{\alpha \in J}$ is said to \textbf{converge} to a point $x \in X$ if for every neighbourhood $U$ of $x$, there exists $\alpha_0 \in J$ such that $x_\alpha \in U$ for all $\alpha \geq \alpha_0$.
 \end{defn}
 
 \hhrule 
