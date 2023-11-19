@@ -5,3 +5,6 @@ map:
   - sequences_and_nets.tex
   - interior_and_closure.tex
   - product_topology.tex
+  - subspace_topology.tex
+  - continuous_function.tex
+  - generalized_product_topology.tex

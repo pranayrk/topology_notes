@@ -7,6 +7,8 @@
 \usepackage{lipsum}
 \usepackage{thmtools}
 \usepackage{enumitem}
+\usepackage{bm}
+\usepackage{mathrsfs}
 \usepackage[margin=0.75in]{geometry}
 
 \tolerance=1
@@ -15,18 +17,22 @@
 \hbadness=10000
 \widowpenalties 1 10000
 \raggedbottom
+\raggedright
 \setlength{\parindent}{0pt}
 \renewcommand{\chaptername}{}
 \newcommand{\hhrule}{\vspace{1cm}\hrule\vspace{1cm}}
 
-
+\newtheoremstyle{dotless}{}{}{}{}{\bfseries}{}{\newline}{}
+\theoremstyle{dotless}
 \newtheorem*{defn}{Definition}
-\newtheorem*{thm}{Theorem}
-\newtheorem*{note}{Note}
-\newtheorem*{lemma}{Lemma}
-\newtheorem*{result}{Result}
-\newtheorem*{remark}{Remark}
-\newtheorem*{prop}{Proposition}
+\newtheorem*{thm}{Theorem} % Anything that needs to be proved
+\newtheorem*{note}{Note} % Anything from the source that provides extra information
+\newtheorem*{remark}{Remark} % Comments by self
+\newtheorem*{lemma}{Lemma} % Any theorem that does not need to be proved
+\newtheorem*{prop}{Proposition} % Anything that comes from another subject and does not need to be proved
+\newtheorem*{result}{Result} % Anything from the source that is not a theorem or lemma
+
+\everymath{\displaystyle}
 
 \begin{document}
 
@@ -64,11 +70,11 @@ Let $X$ be any set. The collection $\tau = \left\{ \varnothing, X \right\}$ is c
 \end{defn}
 
 \begin{defn}
-    Let $X$ be any set. The collection $\\tau = \left\{ A \subseteq X  :  X \setminus A \text{ is finite } \right\} \cup \left\{ \varnothing \right\}$ is called the \textbf{co-finite topology}.
+    Let $X$ be any set. The collection $\tau = \left\{ A \subseteq X  :  X \setminus A \text{ is finite } \right\} \cup \left\{ \varnothing \right\}$ is called the \textbf{co-finite topology}.
 \end{defn}
 
 \begin{defn}
-    Let $X$ be any set. The collection $\\tau = \left\{ A \subseteq X  :  X \setminus A \text{ is countable } \right\} \cup \left\{ \varnothing \right\}$ is called the \textbf{co-countable topology}.
+    Let $X$ be any set. The collection $\tau = \left\{ A \subseteq X  :  X \setminus A \text{ is countable } \right\} \cup \left\{ \varnothing \right\}$ is called the \textbf{co-countable topology}.
 \end{defn}
 
 
@@ -332,7 +338,196 @@ Every sequence is a net.
     The product topology on $\mathbb{R} \times \mathbb{R}$ coincides with the usual topology on $\mathbb{R}^2$
 \end{result}
 
+\begin{note}
+    Missed quotient topology, check.
+\end{note}
 \hhrule
+
+\begin{defn}
+    Let $(X, \tau)$ be a topological space and $Y \subseteq X$.
+    
+    The collection $\tau_Y$ is a topology on $Y$ called the \textbf{subspace topology} and with this topology, $Y$ is called a \textbf{subspace} of $X$.
+\end{defn}
+
+\begin{thm}
+    Let $Y$ be a subspace of $X$. Then a subset $U$ of $Y$ is open in $Y$ iff $U = V \cap Y$ for some open set $V$ in $X$.
+\end{thm}
+
+\begin{thm}
+    If $\mathscr{B}$ is a basis for the topology on $X$, then the collection $\mathscr{B}_Y = \{ B \cap Y  | B \in \mathscr{B} \}$ is a basis for the subspace topology on $Y$.
+\end{thm}
+
+
+
+\begin{thm}
+    Let $Y$ be an open subspace of $X$. Then a subset $U$ of $Y$ is open in $Y$ iff $U$ is open in $X$.
+\end{thm}
+
+\begin{thm}
+    Let $Y$ be a closed subspace of a topological space $X$. Then a subset $C$ of $Y$ is closed in $Y$ iff it is closed in $X$.
+\end{thm}
+
+\begin{thm}
+    Let $X$ be a topological space and $Y$ be a subspace of $X$.
+
+    Let $C \subseteq Y$. Then $C$ is closed in $Y$ iff there is a closed set $D$ in $X$ such that $Y \cap D = C$
+\end{thm}
+
+\begin{thm}
+    Let $X$ be a topological space and $Y$ be a closed subspace of $X$. Let $C \subseteq Y$. Then $C$ is closed in $Y$ iff $C$ is closed in $X$.
+\end{thm}
+
+\begin{thm}
+    If $A$ is a subspace of $X$ and $B$ is a subspace of $Y$, then the product topology on $A \times B$ is the same as the topology $A \times B$ inherits as a subspace of $X \times Y$.
+\end{thm}
+
+\begin{thm}
+    Let $X$ be a topological space and $Y$ be a subspace of $X$. Let $A \subseteq Y$. Then $\text{cl}_X(A) \cap Y = \text{cl}_Y(A)$
+\end{thm}
+
+\hhrule
+
+\begin{defn}
+    A function $f:(X, \tau) \to (Y, \sigma)$ is said to be \textbf{continuous} at $x_0 \in X$ if for every neighbourhood $U$ of $f(x_0)$, there exists a neighbourhood $V$ of $x_0$ such that $f(V) \subseteq U$.
+
+    The function $f$ is said to be \textbf{continuous} if it is continuous at each point of $X$.
+\end{defn}
+
+\begin{thm}
+    Let $f:(X,\tau) \to (Y, \sigma)$ be a function from a topological space $(X,\tau)$ to a topological space $(Y,\sigma)$. Then the following are equivalent:
+    \begin{itemize}
+        \item $f$ is continuous on $X$
+        \item $f^{-1}(U)$ is an open subset of $X$ whenever $U$ is open in $X$
+        \item $f(\overline{A}) = \overline{f(A)}$ for every $A \subseteq X$
+        \item $f^{-1}(C)$ is a closed subset of $X$ whenever $C$ is closed in $Y$
+        \item The net $x_\lambda \to x$ in $X$ $\implies f(x_\lambda) \to f(x)$ in $Y$
+    \end{itemize}
+\end{thm}
+
+\begin{thm}
+    The composition of two continuous functions is continuous.
+\end{thm}
+
+\begin{thm}
+    The restriction of a continuous function on a topological space to a subspace is continuous.
+\end{thm}
+
+\begin{thm}
+    Let $(X, \tau)$ and $(Y, \sigma)$ be topological spaces and $Z = X \times Y$. 
+    For a net $(z_\lambda) = (x_\lambda, y_\lambda)$ in $Z$, $z_\lambda \to z \in Z \iff x_\lambda \to x \in X \text{ and } y_\lambda \to y \in Y$.
+\end{thm}
+
+\begin{defn}
+    Let $X$ and $Y$ be topological spaces and let $f: X \to Y$ be a bijection. If both the function $f$ and the inverse function $f^{-1}: Y \to X$ are continuous, then $f$ is called a \textbf{homeomorphism}.
+\end{defn}
+
+\hhrule
+
+
+\begin{defn}
+    Let $\{ X_\alpha \}_{\alpha \in I}$ be an indexed family of topological spaces. For the product space $X =  \prod_{\alpha \in I} X_\alpha$, we take the basis $\mathscr{B} = \{ \prod_{\alpha \in I} U_\alpha | U_\alpha \text{ is open in } X_\alpha \}$. The topology generated by this basis is called the \textbf{box topology}. 
+\end{defn}
+
+\begin{note}
+    The above is a direct generalization of the earlier product topology defined on product of two spaces.
+\end{note}
+
+\begin{thm}
+    A subset $W$ of $X$ is open in $X$ with the box topology iff for every $x = (x_\alpha)_{\alpha \in I}$, there exists an open set $U_\alpha$ in $X_\alpha$ such that $(x_\alpha)_{\alpha \in I} \in \prod_{\alpha \in I} U_\alpha \subseteq W$
+\end{thm}
+
+\begin{defn}
+Let $\{ X_\alpha \}_{\alpha \in I}$ be an indexed family of topological spaces. For the product space $X =  \prod_{\alpha \in I} X_\alpha$, we take the basis $\mathscr{C} = \{ \prod_{\alpha \in I} U_\alpha | U_\alpha \text{ is open in } X, U_\alpha = X_\alpha \text{ for all but finitely many } \alpha \in I \}$. 
+
+    The topology generated by this basis is called the \textbf{product topology} on $X$.
+\end{defn}
+
+\begin{note}
+    Unless mentioned otherwise, we usually consider the product topology on the product space $X$.
+\end{note}
+
+\begin{thm}
+    The product topology on $X$ is weaker than the box topology on $X$.
+\end{thm}
+
+\begin{note}
+    When the index $I$ is finite, the product topology and the box topology coincide.
+\end{note}
+
+\begin{defn}
+    Let $\{ X_\alpha \}_{\alpha \in I}$ be an indexed family of topological spaces and $X = \prod_{\alpha \in I} X_\alpha$ be the product space. 
+
+    For every $\beta \in I$, the \textbf{$\beta$-th projection map} $\Pi_\beta: X \to X_\beta$ is defined as $\Pi_\beta ( (x_\alpha)_{\alpha \in I} ) = x_\beta$
+\end{defn}
+
+\begin{thm}
+Let $\{ X_\alpha \}_{\alpha \in I}$ be an indexed family of topological spaces and $X = \prod_{\alpha \in I} X_\alpha$ be the product space. 
+
+    The collection $\mathscr{S} = \{ \Pi^{-1}_\beta (U_\beta) | U_\beta \text{ is open in } X_\beta, \beta \in I \}$is a subbasis for the product topology on $X$.
+\end{thm}
+
+\begin{thm}
+Let $\{ X_\alpha \}_{\alpha \in I}$ be an indexed family of topological spaces and $X = \prod_{\alpha \in I} X_\alpha$ be the product space equipped with the product topology.
+
+    Then a function $f: A \to X$ is continuous iff $f_\alpha = \Pi_\alpha \circ f : A \to X_\alpha$ is continuous for each $\alpha \in I$.
+\end{thm}
+
+\begin{thm}
+    The topologies on $\mathbb{R}^n$ induced by the euclidean metric and the square norm are the same as the product topology on $\mathbb{R}^n$.
+\end{thm}
+
+\begin{defn}
+    Consider the standard bounded metric on $\mathbb{R}$ defined as $\overline{d} = \min\{ |a-b|, 1\}$.
+    Given an index set $I$ and points $x = (x_\alpha)_{\alpha \in I}$ and $y = (y_\alpha)_{\alpha \in I}$, the metric $\rho$ on $\mathbb{R}^I$ defined  as $\rho(x,y) = \sup \{ \overline{d}(x_\alpha, y_\alpha) | \alpha \in I \}$ is known as the \textbf{uniform metric} on $\mathbb{R}^I$.
+
+    The topology generated by the uniform metric is called the \textbf{uniform topology} on $\mathbb{R}^I$.
+\end{defn}
+
+\begin{thm}
+    The uniform topology on $\mathbb{R}^I$ is weaker than the box topology and stronger than the product topology. 
+    All these topologies are different if $I$ is infinite.
+\end{thm}
+
+\begin{defn}
+    Let $X$ and $Y$ be topological spaces and let $p: X \to Y$ be a surjective map. 
+
+    The map $p$ is said to be a \textbf{quotient map} provided a subset $U$ of $Y$ is open in $Y$ iff $p^{-1}(U)$ is open in $X$.
+\end{defn}
+
+\begin{note}
+    We can replace 'open' in the above definition with 'closed'.
+\end{note}
+
+\begin{note}
+    Every quotient map is a continuous map.
+\end{note}
+
+\begin{defn}
+    A map $f: X \to Y$ is said to be \textbf{open} if for each open set $U$ in $X$, $f(U)$ is open in $Y$.
+    A map $f: X \to Y$ is said to be \textbf{closed} if for each closed set $C$ in $X$, $f(C)$ is closed in $Y$.
+\end{defn}
+
+
+\begin{note}
+    A surjective continuous map which is either open or closed is a quotient map. Note, there are quotient maps which are neither open nor closed.
+\end{note}
+
+\begin{defn}
+    If $X$ is a topological space and $A$ is any set, and if $p: X \to A$ is a surjective map, then there exists exactly one topology $\tau$ on $A$ relative to which $p$ is a quotient map. This topology is known as the \textbf{quotient topology} induced by $p$.
+\end{defn}
+
+\begin{defn}
+    Let $X$ be a topological space and $\sim$ be an equivalence relation on $X$. 
+
+    Define a map $p: X \to \frac{X}{\sim}$ as $p(x) = [x]$ where $[x]$ is the equivalence class of $x$ under $\sim$.
+
+    Let $\tau$ be the quotient topology induced by $p$ on $\frac{X}{\sim}$. Then the space $(\frac{X}{\sim}, \tau)$ is called the \textbf{quotient space} of $X$.
+\end{defn}
+
+
+\hhrule
+
+
 
 \end{document}
 
