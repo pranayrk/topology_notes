@@ -1,0 +1,189 @@
+\begin{defn}
+    A subset $A$ of a topological space is said to be \textbf{dense} if the closure of $A$ in $X$ is equal to $X$.
+\end{defn}
+
+\begin{defn}
+    A topological space $(X, \tau)$ is said to be \textbf{seperable} if it has a countable dense subset.
+\end{defn}
+
+\begin{note}
+    The discrete topology on $X$ is seperable iff $X$ is countable.
+\end{note}
+
+\begin{note}
+    A subspace of a seperable space may not be seperable.
+\end{note}
+
+\begin{thm}
+    A continuous image of a seperable space is seperable.
+\end{thm}
+
+\begin{defn}
+    A topological space $X$ is said to be \textbf{second countable} if it has a countable basis.
+\end{defn}
+
+\begin{note}
+    The discrete topology on $X$ is second countable iff $X$ is countable.
+\end{note}
+
+\begin{thm}
+    Every second countable space is seperable.
+\end{thm}
+
+\begin{thm}
+    Any subspace of a second countable space is second countable.
+\end{thm}
+
+\begin{thm}
+    A seperable metrizable space is second countable.
+\end{thm}
+
+\begin{thm}
+    A countable product of second countable spaces is second countable.
+\end{thm}
+
+\begin{defn}
+    A topological space $(X, \tau)$ is said to be \textbf{first countable} if it has a countable basis at each of its points.
+\end{defn}
+
+\begin{thm}
+    Every metrizable space is first countable.
+\end{thm}
+
+\begin{thm}
+    Every second countable space is first countable.
+\end{thm}
+
+\begin{thm}
+    Any subspace of a first countable space is first countable.
+\end{thm}
+
+\begin{thm}
+    Let $f:(X,\tau) \to (X, \sigma)$ be a function from a first countable space $X$ to any topological space $Y$.
+
+    Let $x \in X$. Then $f$ is continuous at $x$ iff whenever $x_n \to x$ in $X$ implies $f(x_n) \to f(x)$ in $Y$.
+\end{thm}
+
+\begin{defn}
+    A topological space $X$ is called a \textbf{$\bm{T_1}$-space} if for every pair of distinct points $x$ and $y$ in $X$, there exists neighbourhoods $U$ of $x$ and $V$ of $y$ such that $x \notin V$ and $y \notin U$.
+\end{defn}
+
+\begin{thm}
+    A topological space $X$ is $T_1$ iff every finite set of $X$ is closed.
+\end{thm}
+
+\begin{thm}
+    Let $X$ be a $T_1$ space and $A \subseteq X$. Then $x$ is a limit point of $A$ iff every neighbourhood of $x$ intersects $A$ infinitely many times.
+\end{thm}
+
+\begin{defn}
+    A topological space is called a \textbf{$\bm{T_2}$-space} (or \textbf{Hausdroff}) if for every pair of distinct points $x, y \in X$, there exists two disjoint open sets $U$ and $V$ such that $x \in U$ and $y \in V$.
+\end{defn}
+
+\begin{note}
+    Every metrizable space is $T_2$.
+\end{note}
+
+\begin{thm}
+    Let $X$ be any set and $\tau_1$ and $\tau_2$ be two topologies on $X$. If $\tau_1 \subseteq \tau_2$ and $(X,\tau_1)$ is Hausdroff, then $(X,\tau_2)$ is Hausdroff.
+\end{thm}
+
+\begin{thm}
+    Let $(X,\tau)$ be a Hausdroff space. Then any net in $X$ has a unique limit.
+\end{thm}
+
+\begin{thm}
+    Every subspace of a Hausdroff space is Hausdroff.
+\end{thm}
+
+\begin{thm}
+    Any arbitrary product of Hausdroff spaces is Hausdroff.
+\end{thm}
+
+\begin{thm}
+    Let $f: X \to Y$ be a continuous function from a topological space $X$ to a Hausdroff space $Y$. 
+    Let $D$ be a dense set in $X$ and $y_0 \in Y$.
+
+    Then $f(x) = y_0 $ for all $x \in D$ implies $f(x) = y_0$ for all $x \in X$ 
+\end{thm}
+
+\begin{thm}
+    Let $f, g: X \to \mathbb{R}$ be two continuous functions from a topological space $X$ to $\mathbb{R}$.
+
+    Let $D$ be a dense set in $X$. 
+    Then $f(x) = g(x)$ for all $x \in D$ implies $f(x) = g(x)$ for all $x \in X$.
+\end{thm}
+
+\begin{defn}
+    A $T_1$ space $X$ is called a \textbf{$\bm{T_3}$-space} (or \textbf{regular}) if for every pair of a point $x$ and a closed set $A$ not containing $x$, there exists two disjoint open sets $U$ and $V$ such that $x \in U$ and $A \subseteq V$.
+\end{defn}
+
+\begin{thm}
+    Every $T_3$ space is $T_2$.
+\end{thm}
+
+\begin{thm}
+    Let $X$ be a $T_1$ space. Then $X$ is regular iff given a point $x$ and a neighbourhood $U$ of $x$, there exists a neighbourhood $V$ of $x$ such that $x \in V \subseteq \overline{V} \subseteq U$.
+\end{thm}
+
+\begin{thm}
+    A subspace of a regular space is regular.
+\end{thm}
+
+\begin{thm}
+    A product of regular spaces is regular.
+\end{thm}
+
+\begin{thm}[Urysohn Metrization Theorem]
+    Every second countable regular space is metrizable.
+\end{thm}
+
+\begin{defn}
+    A $T_1$ space $X$ is said to be a \textbf{$\bm{T_4}$-space} (or \textbf{normal}) if for every two disjoint closed sets $A$ and $B$ in $X$, there exists two disjoint open sets $U$ and $V$ such that $A \subseteq U$ and $B \subseteq V$.
+\end{defn}
+
+\begin{defn}
+    Every $T_4$ space is a $T_3$ space.
+\end{defn}
+
+\begin{note}
+    Product of normal spaces need not be normal.
+\end{note}
+
+\begin{thm}
+    Every metrizable space is normal.
+\end{thm}
+
+\begin{thm}
+    Every second countable regular space is normal.
+\end{thm}
+
+\begin{thm}
+    A closed subspace of a normal space is normal.
+\end{thm}
+
+\begin{thm}[Urysohn's Lemma]
+    Let $X$ be a normal space and $A$ and $B$ be two disjoint closed subsets of $X$. Then there exists a continuous map $f: X \to [0,1]$ such that $f(x) = 0$ for all $x \in A$ and $f(x) = 1$ for all $x \in B$.
+\end{thm}
+
+\begin{defn}
+    A $T_1$ space $X$ is called a \textbf{$\bm{T_{3 \frac{1}{2}}}$-space} (or \textbf{completely regular}) if for every point $x_0$ and a closed set $A$ not containing $x_0$, there exists a continuous function $f: X \to [0,1]$ with $f(x_0) = 1$ and $f(x) = 0$ for all $x \in A$.
+\end{defn}
+
+\begin{note}
+    Every normal space is completely regular.
+\end{note}
+
+\begin{note}
+    Every completely regular space is regular.
+\end{note}
+
+\begin{thm}
+    A subspace of a completely regular space is completely regular.
+\end{thm}
+
+\begin{thm}
+    An arbitrary product of completely regular spaces is completely regular.
+\end{thm}
+
+\hhrule

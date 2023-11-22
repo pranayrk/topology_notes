@@ -1,0 +1,36 @@
+\begin{defn}
+    A function $f:(X, \tau) \to (Y, \sigma)$ is said to be \textbf{continuous} at $x_0 \in X$ if for every neighbourhood $U$ of $f(x_0)$, there exists a neighbourhood $V$ of $x_0$ such that $f(V) \subseteq U$.
+
+    The function $f$ is said to be \textbf{continuous} if it is continuous at each point of $X$.
+\end{defn}
+
+\begin{thm}
+    Let $f:(X,\tau) \to (Y, \sigma)$ be a function from a topological space $(X,\tau)$ to a topological space $(Y,\sigma)$. Then the following are equivalent:
+    \begin{itemize}
+        \item $f$ is continuous on $X$
+        \item $f^{-1}(U)$ is an open subset of $X$ whenever $U$ is open in $X$
+        \item $f(\overline{A}) = \overline{f(A)}$ for every $A \subseteq X$
+        \item $f^{-1}(C)$ is a closed subset of $X$ whenever $C$ is closed in $Y$
+        \item The net $x_\lambda \to x$ in $X$ $\implies f(x_\lambda) \to f(x)$ in $Y$
+    \end{itemize}
+\end{thm}
+
+\begin{thm}
+    The composition of two continuous functions is continuous.
+\end{thm}
+
+\begin{thm}
+    The restriction of a continuous function on a topological space to a subspace is continuous.
+\end{thm}
+
+\begin{thm}
+    Let $(X, \tau)$ and $(Y, \sigma)$ be topological spaces and $Z = X \times Y$. 
+    For a net $(z_\lambda) = (x_\lambda, y_\lambda)$ in $Z$, $z_\lambda \to z \in Z \iff x_\lambda \to x \in X \text{ and } y_\lambda \to y \in Y$.
+\end{thm}
+
+\begin{defn}
+    Let $X$ and $Y$ be topological spaces and let $f: X \to Y$ be a bijection. If both the function $f$ and the inverse function $f^{-1}: Y \to X$ are continuous, then $f$ is called a \textbf{homeomorphism}.
+\end{defn}
+
+\hhrule
+
